@@ -8,17 +8,20 @@
 import UIKit
 
 extension UIView {
-    func show(shown: Bool) {
+    func show(shown: Bool = true, start: Float, end: Float) {
+        
         let animation = CABasicAnimation(keyPath: "opacity")
+
         if shown {
-            animation.fromValue = 0
-            animation.toValue = 0.8
+            animation.fromValue = start
+            animation.toValue = end
             animation.duration = 0.3
         } else {
-            animation.fromValue = 0.8
-            animation.toValue = 0
+            animation.fromValue = end
+            animation.toValue = start
             animation.duration = 0.3
         }
+        
         layer.add(animation, forKey: nil)
     }
 }

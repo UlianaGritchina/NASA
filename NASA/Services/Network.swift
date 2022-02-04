@@ -7,12 +7,12 @@
 
 import Foundation
 
+enum NetworkError: Error {
+    case badURL
+    case noData
+}
+
 class NetworkManager {
-    
-    enum NetworkError: Error {
-        case badURL
-        case noData
-    }
     
     static let shared = NetworkManager()
     
@@ -24,7 +24,7 @@ class NetworkManager {
             completion(.failure(.badURL))
             return
         }
-        
+
         URLSession.shared.dataTask(with: url) { data, _, error in
             guard let data = data else {
                 completion(.failure(.noData))
@@ -46,6 +46,24 @@ class NetworkManager {
 }
 
 
+class MyImageMeneger {
+    static var shered = MyImageMeneger()
+  
+    private init() {}
+    
+    func fetchImage(from url: URL, complition: @escaping(Data, URLResponse) -> Void) {
+        URLSession.shared.dataTask(with: url) { data, response, error  in
+            guard let data = data, let response = response else {
+                print(error?.localizedDescription ?? "No error description")
+                return
+            }
+            
+            DispatchQueue.main.async {
+                complition(data, response)
+            }
 
-
+        }.resume()
+        
+    }
+}
 

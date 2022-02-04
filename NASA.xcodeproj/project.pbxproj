@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0E49782E27A80F42000D0945 /* Extension + UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E49782D27A80F42000D0945 /* Extension + UIView.swift */; };
+		0E49BE5127AD4B18003DEEA7 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E49BE5027AD4B18003DEEA7 /* ImageView.swift */; };
+		0E49BE5327AD4FA3003DEEA7 /* FullImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E49BE5227AD4FA3003DEEA7 /* FullImageViewController.swift */; };
+		0E5590C327ABEBE3002D8558 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5590C227ABEBE3002D8558 /* ImageManager.swift */; };
 		0E85EBB527A6C4240004813F /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E85EBB427A6C4240004813F /* Network.swift */; };
 		0EB72F5627A2D23700A823E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB72F5527A2D23700A823E8 /* AppDelegate.swift */; };
 		0EB72F5827A2D23700A823E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB72F5727A2D23700A823E8 /* SceneDelegate.swift */; };
@@ -21,6 +24,9 @@
 
 /* Begin PBXFileReference section */
 		0E49782D27A80F42000D0945 /* Extension + UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIView.swift"; sourceTree = "<group>"; };
+		0E49BE5027AD4B18003DEEA7 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		0E49BE5227AD4FA3003DEEA7 /* FullImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullImageViewController.swift; sourceTree = "<group>"; };
+		0E5590C227ABEBE3002D8558 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 		0E85EBB427A6C4240004813F /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		0EB72F5227A2D23700A823E8 /* NASA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NASA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EB72F5527A2D23700A823E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E49BE5427AD553B003DEEA7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0E49BE5027AD4B18003DEEA7 /* ImageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		0EB72F4927A2D23700A823E8 = {
 			isa = PBXGroup;
 			children = (
@@ -64,10 +78,12 @@
 		0EB72F5427A2D23700A823E8 /* NASA */ = {
 			isa = PBXGroup;
 			children = (
+				0E5590C227ABEBE3002D8558 /* ImageManager.swift */,
 				0EB72F5527A2D23700A823E8 /* AppDelegate.swift */,
 				0EB72F5727A2D23700A823E8 /* SceneDelegate.swift */,
 				0E49782D27A80F42000D0945 /* Extension + UIView.swift */,
 				0EB72F6B27A2E2A100A823E8 /* Models */,
+				0E49BE5427AD553B003DEEA7 /* Views */,
 				0EB72F7027A2E51C00A823E8 /* Controllers */,
 				0EC33AB827A3C622002B3EC1 /* Services */,
 				0EB72F5B27A2D23700A823E8 /* Main.storyboard */,
@@ -91,6 +107,7 @@
 			children = (
 				0EB72F5927A2D23700A823E8 /* StartViewController.swift */,
 				0EB72F6C27A2E4F500A823E8 /* PictureViewController.swift */,
+				0E49BE5227AD4FA3003DEEA7 /* FullImageViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -177,8 +194,11 @@
 				0EB72F5A27A2D23700A823E8 /* StartViewController.swift in Sources */,
 				0EB72F6A27A2E29900A823E8 /* astronomyPicture.swift in Sources */,
 				0E49782E27A80F42000D0945 /* Extension + UIView.swift in Sources */,
+				0E5590C327ABEBE3002D8558 /* ImageManager.swift in Sources */,
 				0EB72F5627A2D23700A823E8 /* AppDelegate.swift in Sources */,
+				0E49BE5327AD4FA3003DEEA7 /* FullImageViewController.swift in Sources */,
 				0EB72F5827A2D23700A823E8 /* SceneDelegate.swift in Sources */,
+				0E49BE5127AD4B18003DEEA7 /* ImageView.swift in Sources */,
 				0E85EBB527A6C4240004813F /* Network.swift in Sources */,
 				0EB72F6D27A2E4F500A823E8 /* PictureViewController.swift in Sources */,
 			);
